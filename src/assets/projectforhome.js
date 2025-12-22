@@ -14,12 +14,14 @@ const projectforhome = [
     name: "UX & UI",
     work: "Interface design, flows, and interaction work.",
     year: "Product Interfaces & Experience Design",
+    image: image2,
     path: "/branding",
   },
   {
     name: "Case Studies",
     work: "Real projects with process, decisions, and outcomes.",
     year: "Process, Decisions & Outcomes",
+    image: image3,
     path: "/branding",
   },
 ];
