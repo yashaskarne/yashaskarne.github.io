@@ -9,6 +9,7 @@ import bd1 from "../../../assets/gmpimg/bd1.png";
 import bd2 from "../../../assets/gmpimg/bd2.png";
 import bd3 from "../../../assets/gmpimg/bd3.png";
 import white3 from "../../../assets/gmpimg/white3.png";
+import penimg from "../../../assets/gmpimg/pen.png";
 import grid from "../../../assets/gmpimg/grid.png";
 import leather from "../../../assets/gmpimg/leather.png";
 import gmpgold from "../../../assets/gmpimg/gmpgold.png";
@@ -17,12 +18,12 @@ import thankyou from "../../../assets/gmpimg/thankyou.png";
 const gmp = () => {
   return (
     <div className="gmp">
-      <div className="hero">
+      <div className="hero-gmp">
         <img src={gmpicon} alt="" />
         <h1>Glorious Maidens Pirate</h1>
       </div>
-      <div className="gmpimg">
-        <img src={gmpimg} alt="" />\
+      <div className="gmp-img-p">
+        <img src={gmpimg} alt="" />
         <p>
           Brand identity and visual world for a pirate-inspired leather goods
           label. Identity system and visual direction for an artisanal leather
@@ -61,7 +62,7 @@ const gmp = () => {
       </div>
       <div className="grid">
         <h1>GRID</h1>
-        <img src={grid} alt="" />
+        <img src={grid} alt="" className="grid-img" />
         <p>
           The identity began with early sketch explorations inspired by the idea
           of full-grain buffalo leather raw, strong, and unapologetic. Instead
@@ -71,11 +72,20 @@ const gmp = () => {
           foundation for a symbol rooted in strength and rebellion rather than
           decoration.
         </p>
-        <img src={white3} alt="" />
+        <div className="grid-imgs">
+          <img src={white3} alt="" className="white3-img" />
+          <img src={penimg} alt="" className="penimg" />
+        </div>
       </div>
       <div className="leather-gmp">
-        <img src={leather} alt="" />
-        <p></p>
+        <img src={leather} alt="" className="leather-img" />
+        <p>
+          Alongside the brand identity, I contributed to the early product
+          direction by guiding material choices and leather usage to align with
+          the brand’s rugged, long-lasting character. The focus was on
+          durability, texture, and honest aging ensuring the products reflected
+          the same raw, artisanal values as the identity itself.
+        </p>
         <img src={gmpgold} alt="" className="gmp-gold" />
       </div>
       <div className="thankyou-gmp">
