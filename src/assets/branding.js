@@ -7,7 +7,7 @@ const branding = [
     p_name: "Glorious Maidens Pirate",
     p_desc: "Identity system, logo, photography, and brand world.",
     p_image: gmp_png,
-    path: "",
+    path: "/branding/gmp",
   },
   {
     p_name: "Crosia",

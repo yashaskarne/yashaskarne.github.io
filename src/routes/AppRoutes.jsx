@@ -5,6 +5,7 @@ import Footer from "../component/footer/footer";
 import Home from "../pages/home/home";
 import Branding from "../pages/branding/branding";
 import Crosia from "../pages/branding/crosia/crosia";
+import GMP from "../pages/branding/gmp/gmp";
 
 const AppRoutes = () => {
   return (
@@ -15,6 +16,7 @@ const AppRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/branding" element={<Branding />} />
         <Route path="branding/crosia" element={<Crosia />} />
+        <Route path="branding/gmp" element={<GMP />} />
       </Routes>
 
       <Footer />

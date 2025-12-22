@@ -24,7 +24,6 @@ import thankyou from "../../../assets/crosiaimg/thankyou.png";
 const crosia = () => {
   return (
     <div className="crosia">
-      <div className="header-bg"></div>
       <div className="cover">
         <img src={hero_cover} alt="" />
       </div>
@@ -114,7 +113,7 @@ const crosia = () => {
               product-led storytelling.
             </p>
           </div>
-          <div className="thankyou">
+          <div className="thankyou-c">
             <img src={thankyou} alt="" />
             <h1>Thank You</h1>
           </div>
