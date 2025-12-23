@@ -13,9 +13,8 @@ const branding = () => {
     <div>
       <Header />
       <div className="back-branding">
-        <a href="/">
-          <img src={back} alt="" onClick={() => navigate(-1)} />
-        </a>
+        <img src={back} alt="" onClick={() => navigate(-1)} />
+
         <h1>Branding</h1>
       </div>
       <div className="branding">
