@@ -2,6 +2,7 @@ import React from "react";
 import "./footer.css";
 import downarrow from "../../assets/downarroe.png";
 import btnicon from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const footer = () => {
   return (
@@ -27,7 +28,7 @@ const footer = () => {
             <p>yash@gmail.com</p>
             <p>987456123</p>
           </div>
-          <div className="right-footer">
+          <div className="center-footer">
             <h2>Know More</h2>
             <div className="social">
               <img
@@ -43,6 +44,18 @@ const footer = () => {
                 alt=""
               />
             </div>
+          </div>
+          <div className="right-footer">
+            <h2>Explore</h2>
+            <Link to={"/branding"}>
+              <button>Branding</button>
+            </Link>
+            <Link to={"/uiux"}>
+              <button>UiUx</button>
+            </Link>
+            <Link to={"/branding"}>
+              <button>Case Studies</button>
+            </Link>
           </div>
         </div>
       </div>

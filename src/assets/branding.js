@@ -1,6 +1,6 @@
 import gmp_png from "./gmp.png";
 import crosia_png from "./crosia.png";
-import waiz_png from "./waiz.png";
+import vacation_png from "./vacation.png";
 
 const branding = [
   {
@@ -18,7 +18,7 @@ const branding = [
   {
     p_name: "Vacation Village",
     p_desc: "Identity system, logo, photography, and brand world.",
-    p_image: waiz_png,
+    p_image: vacation_png,
     path: "",
   },
 ];

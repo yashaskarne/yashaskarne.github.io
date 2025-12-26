@@ -1,17 +1,29 @@
+@font-face {
+  font-family: rosehot;
+  src: url('../public/fonts/helvetica/Helvetica.ttf');
+  font-weight: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #000000;
   color: rgb(255, 255, 255);
-  font-family: 'Inter', sans-serif;
+  font-family: 'helvetica', sans-serif;
 }
 
-
-
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "helvetica";
+  font-weight: bold;
+}
 
 p {
   font-weight: 300;
-  /* Light */
+
 }

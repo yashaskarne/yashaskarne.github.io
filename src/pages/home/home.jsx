@@ -25,7 +25,7 @@ const hero = () => {
             <img src={heroright} alt="" />
 
             <p>
-              I’m currently leading design for Vacation Village,
+              I’m currently leading design for <span> Vacation Village</span>,
               <br /> shaping its identity, communication, and full <br />
               brand experience across digital and print.
             </p>
