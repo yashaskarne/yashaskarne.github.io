@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 const branding = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div id="branding">
       <Header />
       <div className="back-branding">
         <img src={back} alt="" onClick={() => navigate(-1)} />

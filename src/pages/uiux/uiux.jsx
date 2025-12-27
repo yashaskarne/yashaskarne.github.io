@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const uiux = () => {
   const navigate = useNavigate();
   return (
-    <div className="uiux">
+    <div className="uiux" id="uiux">
       <Header />
       <div className="back-branding">
         <img src={back} alt="back" onClick={() => navigate(-1)} />

@@ -21,10 +21,11 @@ import lv3 from "../../../assets/crosiaimg/lv3.png";
 import pv from "../../../assets/crosiaimg/pv.png";
 import thankyou from "../../../assets/crosiaimg/thankyou.png";
 import Header from "../../../component/Header/red_header/header.jsx";
+import tgbg from "../../../assets/crosiaimg/tgbg.png";
 
 const crosia = () => {
   return (
-    <div className="crosia">
+    <div className="crosia" id="crosia">
       <Header />
       <div className="cover">
         <img src={hero_cover} alt="" />
@@ -52,16 +53,17 @@ const crosia = () => {
         </div>
         <div className="sec2">
           <div className="camping-red">
-            <h1>CAMPING RED</h1>
+            <h1>CAMPAIGN RED</h1>
           </div>
           <div className="camping-images">
             <img src={camping1} alt="" />
             <img src={camping2} alt="" />
             <img src={camping3} alt="" />
           </div>
+          <img src={tgbg} alt="" className="tgbg" />
           <div className="typography">
             <h1>Typography</h1>
-            <h2>Resehot</h2>
+            <h2>Rosehot</h2>
             <p>Custom ligature between "R" and "S" for soft movement</p>
           </div>
           <div className="logomark">
@@ -87,8 +89,8 @@ const crosia = () => {
           <div className="logo-var">
             <h2>logo variation</h2>
             <div className="lv-images">
-              <img src={lv1} alt="" />
               <img src={lv2} alt="" />
+              <img src={lv1} alt="" />
               <img src={lv3} alt="" />
             </div>
           </div>

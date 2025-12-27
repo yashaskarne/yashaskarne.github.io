@@ -18,7 +18,7 @@ import Header from "../../../component/Header/white_header/header.jsx";
 
 const gmp = () => {
   return (
-    <div className="gmp">
+    <div className="gmp" id="gmp">
       <Header />
       <div className="hero-gmp">
         <img src={gmpicon} alt="" />
