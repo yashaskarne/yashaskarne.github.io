@@ -15,7 +15,7 @@
 }
 
 .hero-gmp img {
-    width: 375px;
+    width: 287px;
 }
 
 .hero-gmp h1 {
@@ -23,25 +23,65 @@
     font-family: "Jacquard 24";
     letter-spacing: -6%;
     font-weight: normal;
+    margin-top: 20px;
 }
 
-.gmp-img-p {
+.after-hero {
+
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 221px;
+    margin-left: 72px;
+
+
 }
 
-.gmp-img-p img {
-    width: 1124px;
+.gmp-left img {
+    width: 574px;
 }
 
-.gmp-img-p p {
-    font-weight: 300;
-    background-color: #FFDE07;
-    padding: 10px;
-    border-radius: 30px;
-    margin: 50px 459px;
+.color-right {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     text-align: center;
+    width: 700px;
+    height: 650px;
+    margin-top: 73px;
+
+
+
+}
+
+.color-p {
+    margin-left: 120px;
+}
+
+.color-p:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+.color-right img {
+    width: 166px;
+}
+
+.bgy-p {
+    justify-content: center;
+    display: flex;
+}
+
+.bgy-p p {
+    font-weight: 100;
+    background-color: #FFDE07;
+    padding: 12px 30px;
+    border-radius: 50px;
+    margin-top: 110px;
+    text-align: center;
+    width: 848px;
+    font-size: 24px;
+
+
 }
 
 .gmp-color {
@@ -65,25 +105,31 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 110px;
+    align-items: center;
+
 }
 
 .brand-direction h3 {
-    font-size: px;
-    padding-bottom: 40px;
+    font-size: 24px;
+    margin-top: 133px;
+
 }
 
 .brand-direction p {
-    margin: 0px 299px;
+    margin-top: 58px;
     font-size: 24px;
+    width: 933px;
     font-family: "Hina Mincho";
 }
 
 .bd-images {
     display: flex;
-    justify-content: space-around;
-    padding-top: 200px;
-    padding-bottom: 40px;
+    justify-content: center;
+    margin-top: 133px;
+    gap: 49px;
+    margin-left: 37px;
+    margin-right: 37px;
+    width: 100%;
 }
 
 .grid {
@@ -91,39 +137,45 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding-bottom: 120px;
+
 }
 
 .grid h1 {
     font-family: "Hina Mincho";
     font-size: 74px;
+    font-weight: 500;
+    margin-top: 55px;
 }
 
 .grid-img {
-    max-width: 1124px;
-    padding-top: 120px;
+    width: 953px;
+    margin-top: 30px;
 }
 
 .grid p {
     font-size: 24px;
     font-family: "Hina Mincho";
-    margin: 0px 300px;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    margin-top: 133px;
+    width: 933px;
 }
 
 .grid-imgs {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 58px;
+}
 
+.penimg {
+    z-index: 2;
+    max-width: 508px;
+    margin-left: -12px;
 }
 
 .white3-img {
     width: 456px;
-}
-
-.penimg {
-    height: 508px;
-    padding-top: 10px;
+    margin-top: -60px;
+    z-index: 0;
 }
 
 
@@ -134,24 +186,25 @@
     color: white;
     text-align: center;
     align-items: center;
-    padding: 200px 100px 0px 100px;
+    margin-top: 133px;
 }
 
 .leather-gmp p {
     font-family: "Hina Mincho";
     font-size: 24px;
-    margin: 0px 200px;
-    padding-top: 100px;
+    margin-top: 64px;
+    width: 933px;
 }
 
 .leather-img {
-    width: 1231px;
+    margin-top: 133px;
+    width: 622px;
 
 }
 
 .gmp-gold {
     width: 816px;
-    padding-top: 200px;
+    margin-top: 23px;
     z-index: 2;
 }
 
@@ -163,17 +216,17 @@
 .thankyou-gmp img {
     width: 100%;
     z-index: 0;
-
-    margin-top: -150px;
+    height: 1666px;
+    margin-top: -380px;
 }
 
 .thankyou-gmp h1 {
-    font-size: 139px;
+    font-size: 70px;
     font-family: "Hina Mincho";
     text-align: center;
     position: absolute;
     width: 100%;
-    margin-top: -500px;
+    margin-top: -200px;
     color: white;
 
 

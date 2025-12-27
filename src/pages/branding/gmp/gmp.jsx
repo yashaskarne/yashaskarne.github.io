@@ -24,28 +24,34 @@ const gmp = () => {
         <img src={gmpicon} alt="" />
         <h1>Glorious Maidens Pirate</h1>
       </div>
-      <div className="gmp-img-p">
-        <img src={gmpimg} alt="" />
+      <div className="after-hero">
+        <div className="gmp-left">
+          <img src={gmpimg} alt="" />
+        </div>
+        <div className="color-right">
+          <div className="color-p">
+            <img src={orange} alt="" />
+            <p>#83D00</p>
+          </div>
+          <div className="color-p">
+            <img src={black} alt="" />
+            <p>#83D00</p>
+          </div>
+          <div className="color-p">
+            <img src={texture} alt="" />
+            <p>TEXTURE</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="bgy-p">
         <p>
           Brand identity and visual world for a pirate-inspired leather goods
           label. Identity system and visual direction for an artisanal leather
           brand.
         </p>
       </div>
-      <div className="gmp-color">
-        <div className="color-p">
-          <img src={orange} alt="" />
-          <p>#83D00</p>
-        </div>
-        <div className="color-p">
-          <img src={black} alt="" />
-          <p>#83D00</p>
-        </div>
-        <div className="color-p">
-          <img src={texture} alt="" />
-          <p>TEXTURE</p>
-        </div>
-      </div>
+
       <div className="brand-direction">
         <h3>Brand Direction</h3>
         <p>
@@ -75,8 +81,8 @@ const gmp = () => {
           decoration.
         </p>
         <div className="grid-imgs">
-          <img src={white3} alt="" className="white3-img" />
           <img src={penimg} alt="" className="penimg" />
+          <img src={white3} alt="" className="white3-img" />
         </div>
       </div>
       <div className="leather-gmp">
