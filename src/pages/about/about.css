@@ -1,0 +1,87 @@
+.about {
+    margin: 0px 46px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.abt-heading {
+    margin-top: 133px;
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: -3px;
+}
+
+.hero-abt {
+    margin-top: 132px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.left-abt {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.hero-abt p {
+    font-size: 33px;
+    width: 755px;
+    font-weight: 400;
+    line-height: 1.45;
+    text-align: left;
+}
+
+.right-abt {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-abt img {
+    width: 515px;
+    max-width: 80%;
+
+}
+
+.right-abt button {
+    border-radius: 50px;
+    padding: 12px 40px;
+    background-color: #212121;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    max-width: 252px;
+}
+
+
+.abt-sec2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.abt-sec2 img {
+    width: 686px;
+    align-self: center;
+    margin-top: 133px;
+    margin-bottom: 200px;
+}
+
+.abt-sec2 h1 {
+    font-size: 68px;
+    font-weight: bold;
+    letter-spacing: -3px;
+    max-width: 1239px;
+}
+
+.abt-sec2 p {
+    font-size: 33px;
+    font-weight: 400;
+    max-width: 990px;
+}

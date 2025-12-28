@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Footer from "../component/footer/footer";
 import Home from "../pages/home/home";
+import About from "../pages/about/about";
 import Branding from "../pages/branding/branding";
 import UiUx from "../pages/uiux/uiux";
 import CaseStudies from "../pages/cases/cases";
@@ -14,6 +15,7 @@ const AppRoutes = () => {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/branding" element={<Branding />} />
         <Route path="/uiux" element={<UiUx />} />
         <Route path="/casestudies" element={<CaseStudies />} />
