@@ -8,6 +8,10 @@
 
 }
 
+.studio-button:hover {
+    background-color: #101010;
+}
+
 .studio .arrow {
     width: 90px;
     height: 93px;
@@ -48,7 +52,6 @@
 .footer {
     display: flex;
     flex-direction: column;
-
     margin: 50px;
     background-color: rgba(65, 64, 64, 0.293);
     border-radius: 20px;
@@ -57,54 +60,6 @@
 }
 
 .footer-name {
-    font-size: 44px;
-}
-
-.footer-connect {
-    display: flex;
-    justify-content: space-around;
-    gap: 250px;
-}
-
-.footer-connect h2 {
-    font-size: 30px;
-    font-weight: 400;
-}
-
-
-.social {
-    display: flex;
-    justify-content: left;
-    gap: 15px;
-
-}
-
-.center-footer .social img {
-    max-width: 40px;
-    border-radius: 10px;
-}
-
-.right-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-}
-
-.right-footer button {
-    padding: 9px 30px;
-    border-radius: 20px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    background-color: black;
-    color: white;
-    border: 1.5px solid white;
-}
-
-
-
-.right-footer button:hover {
-    background-color: #282828;
-    border: none;
+    font-size: 55px;
+    text-align: center;
 }

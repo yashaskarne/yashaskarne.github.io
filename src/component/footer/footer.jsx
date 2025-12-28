@@ -19,44 +19,7 @@ const footer = () => {
       </div>
       <div className="footer">
         <div className="footer-name">
-          <h1>get in touch</h1>
-        </div>
-        <div className="footer-connect">
-          <div className="left-footer">
-            <h2>contact</h2>
-            <p>abc, 12548, india</p>
-            <p>yash@gmail.com</p>
-            <p>987456123</p>
-          </div>
-          <div className="center-footer">
-            <h2>Know More</h2>
-            <div className="social">
-              <img
-                src="https://www.kindpng.com/picc/m/36-368497_instagram-link-logo-instagram-png-transparent-png.png"
-                alt=""
-              />
-              <img
-                src="https://toppng.com/public/uploads/preview/twitter-x-icon-logo-116902890413xbfexhf8l.webp"
-                alt=""
-              />
-              <img
-                src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG8.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="right-footer">
-            <h2>Explore</h2>
-            <Link to={"/branding"}>
-              <button>Branding</button>
-            </Link>
-            <Link to={"/uiux"}>
-              <button>UiUx</button>
-            </Link>
-            <Link to={"/branding"}>
-              <button>Case Studies</button>
-            </Link>
-          </div>
+          <h1>Work inquiries</h1>
         </div>
       </div>
     </div>

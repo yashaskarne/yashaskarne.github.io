@@ -1,4 +1,4 @@
-.header {
+.w-header {
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
@@ -6,6 +6,7 @@
     background: transparent;
     z-index: 2;
     position: relative;
+    background-color: white;
 
 
 }

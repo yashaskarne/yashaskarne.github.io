@@ -22,7 +22,7 @@ const projectforhome = [
     work: "Real projects with process, decisions, and outcomes.",
     year: "Process, Decisions & Outcomes",
     image: image3,
-    path: "/branding",
+    path: "/casestudies",
   },
 ];
 

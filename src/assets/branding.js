@@ -19,7 +19,7 @@ const branding = [
     p_name: "Vacation Village",
     p_desc: "Identity system, logo, photography, and brand world.",
     p_image: vacation_png,
-    path: "",
+    path: "/branding/vacationv",
   },
 ];
 

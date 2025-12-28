@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="w-header">
       <Link to="/" className="logo w-header-link">
         <img src={logo} alt="Logo" />
         <h3>One Eyed Designer</h3>
