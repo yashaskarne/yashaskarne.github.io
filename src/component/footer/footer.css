@@ -12,16 +12,15 @@
     background-color: #101010;
 }
 
-.studio .arrow {
-    width: 90px;
-    height: 93px;
+.studio .arrow img {
+    width: 50px;
 }
 
 .studio-button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 94%;
+    width: 1153px;
     cursor: pointer;
     background-color: rgba(65, 64, 64, 0.293);
     border-radius: 20px;
@@ -31,20 +30,19 @@
 
 .studio-button hr {
     width: 100%;
-    height: 60px;
+    height: 40px;
     border-radius: 20px 20px 00px 0px;
     background-color: #E4E4E4;
 }
 
 .studio-button img {
     width: 80px;
-    height: 82px;
     margin-top: -38px;
     margin-bottom: -40px;
 }
 
 .studio-button h1 {
-    font-size: 70px;
+    font-size: 50px;
     letter-spacing: -4px;
     margin-bottom: 20px;
 }
@@ -52,14 +50,51 @@
 .footer {
     display: flex;
     flex-direction: column;
-    margin: 50px;
-    background-color: rgba(65, 64, 64, 0.293);
+    margin: 40px;
+    background-color: #131313;
     border-radius: 20px;
-    padding: 0px 40px 40px 40px;
+    padding: 65px 90px;
     max-width: 100%;
 }
 
-.footer-name {
-    font-size: 55px;
+.f-heading {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding-bottom: 9px;
     text-align: center;
+}
+
+.f-heading h1 {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.f-data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: -0.9px;
+}
+
+.f-left {
+    text-align: left;
+}
+
+.f-center {
+    text-align: center;
+    margin-left: -80px;
+}
+
+.f-right {
+    text-align: right;
+}
+
+.f-link {
+    text-decoration: none;
+    color: white;
+
 }

@@ -18,8 +18,36 @@ const footer = () => {
         </div>
       </div>
       <div className="footer">
-        <div className="footer-name">
-          <h1>Work inquiries</h1>
+        <div className="f-heading">
+          <h1>Contact</h1>
+          <h1>Social</h1>
+          <h1>Explore</h1>
+        </div>
+        <div className="f-data">
+          <div className="f-left">
+            <p>Bangalore, India</p>
+            <p>yashk8326@gmail.com</p>
+          </div>
+          <div className="f-center">
+            <p>LinkedIn</p>
+            <p>Instagram</p>
+            <p>Behance </p>
+            <p>X</p>
+          </div>
+          <div className="f-right">
+            <Link to={"/branding"} className="f-link">
+              {" "}
+              <p> Branding</p>
+            </Link>
+            <Link to={"/uiux"} className="f-link">
+              {" "}
+              <p> UI/UX</p>
+            </Link>
+            <Link to={"/casestudies"} className="f-link">
+              {" "}
+              <p> Case studies</p>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
