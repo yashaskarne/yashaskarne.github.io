@@ -46,13 +46,7 @@ const ExploreSlider = () => {
           style={{ transform: `translateX(-${index * CARD_WIDTH}px)` }}
         >
           {data.map((item, i) => (
-            <a
-              href={item.link}
-              className="card"
-              key={i}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={item.link} className="card" key={i}>
               <img src={item.image} alt={item.title} />
             </a>
           ))}

@@ -2,6 +2,7 @@ import React from "react";
 import "./header.css";
 import logo from "../../../assets/blogo.png";
 import { Link } from "react-router-dom";
+import resume from "../../../assets/resume.pdf";
 
 const Header = () => {
   return (
@@ -13,7 +14,9 @@ const Header = () => {
       <div className="nav-menu-red">
         <ul>
           <li>
-            <a href="#">Resume</a>
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              Resume
+            </a>
           </li>
           <li>
             <a href="#work">Work</a>

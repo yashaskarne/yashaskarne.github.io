@@ -3,6 +3,7 @@ import "./about.css";
 import Header from "../../component/Header/black_header/header";
 import yash_abt from "../../assets/yashas.png";
 import work_abt from "../../assets/work-abt.png";
+import resume from "../../assets/resume.pdf";
 
 const about = () => {
   return (
@@ -33,7 +34,9 @@ const about = () => {
           </div>
           <div className="right-abt">
             <img src={yash_abt} alt="" />
-            <button> Download Resume</button>
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              <button> Download Resume</button>
+            </a>
           </div>
         </div>
         <div className="abt-sec2">
