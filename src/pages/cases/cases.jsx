@@ -5,11 +5,23 @@ import Header from "../../component/Header/black_header/header.jsx";
 import back from "../../assets/wback.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const cases = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
-    <div className="uiux" id="uiux">
+    <div className="uiux" id="casestudies">
       <Header />
       <div className="back-branding">
         <img src={back} alt="back" onClick={() => navigate(-1)} />

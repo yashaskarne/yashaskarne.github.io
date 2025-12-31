@@ -15,8 +15,20 @@ import leather from "../../../assets/gmpimg/leather.png";
 import gmpgold from "../../../assets/gmpimg/gmpgold.png";
 import thankyou from "../../../assets/gmpimg/thankyou.png";
 import Header from "../../../component/Header/white_header/header.jsx";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const gmp = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <div className="gmp" id="gmp">
       <Header />

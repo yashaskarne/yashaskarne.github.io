@@ -4,12 +4,24 @@ import Header from "../../component/Header/black_header/header";
 import yash_abt from "../../assets/yashas.png";
 import work_abt from "../../assets/work-abt.png";
 import resume from "../../assets/resume.pdf";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const about = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <div>
       <Header />
-      <div className="about">
+      <div className="about" id="about">
         <h1 className="abt-heading">
           I’m a designer focused on building clear, intentional brand and
           product experiences.

@@ -20,10 +20,22 @@ import lv2 from "../../../assets/crosiaimg/lv2.png";
 import lv3 from "../../../assets/crosiaimg/lv3.png";
 import pv from "../../../assets/crosiaimg/pv.png";
 import thankyou from "../../../assets/crosiaimg/thankyou.png";
-import Header from "../../../component/Header/red_header/header.jsx";
+import Header from "../../../component/Header/white_header/header.jsx";
 import tgbg from "../../../assets/crosiaimg/tgbg.png";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const crosia = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <div className="crosia" id="crosia">
       <Header />

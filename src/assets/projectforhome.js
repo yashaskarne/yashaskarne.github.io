@@ -8,21 +8,21 @@ const projectforhome = [
     work: "Identity systems, brand worlds, and visual storytelling.",
     year: "Brand Identity & Visual Worlds",
     image: image1,
-    path: "/branding",
+    path: "/branding#branding",
   },
   {
     name: "UX & UI",
     work: "Interface design, flows, and interaction work.",
     year: "Product Interfaces & Experience Design",
     image: image2,
-    path: "/uiux",
+    path: "/uiux#uiux",
   },
   {
     name: "Case Studies",
     work: "Real projects with process, decisions, and outcomes.",
     year: "Process, Decisions & Outcomes",
     image: image3,
-    path: "/casestudies",
+    path: "/casestudies#casestudies",
   },
 ];
 

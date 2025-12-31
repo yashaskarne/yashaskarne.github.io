@@ -8,12 +8,24 @@ import vd1_img from "../../../assets/vacationv/vd1.png";
 import vd3_img from "../../../assets/vacationv/vd3.png";
 import vd2_img from "../../../assets/vacationv/vd2.png";
 import vd4_img from "../../../assets/vacationv/vd4.png";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const Vacationv = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <div>
       <Header />
-      <div className="vacationv">
+      <div className="vacationv" id="vacationv">
         <div className="vv-hero">
           <img src={hero_img} alt="" />
           <p>Real Estate Brand Experience & Marketing Design</p>

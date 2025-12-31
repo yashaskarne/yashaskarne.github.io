@@ -1,21 +1,32 @@
 import React from "react";
 import "./branding.css";
 import brandingproject from "../../assets/branding.js";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import rightarrow from "../../assets/downarroe.png";
 import Header from "../../component/Header/black_header/header.jsx";
 import back from "../../assets/wback.png";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const branding = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <div id="branding">
       <Header />
       <div className="back-branding">
         <img src={back} alt="" onClick={() => navigate(-1)} />
 
-        <h1>Branding</h1>
+        <h1 id="branding">Branding</h1>
       </div>
       <div className="branding">
         {brandingproject.map((item, index) => (
