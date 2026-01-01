@@ -22,22 +22,8 @@ import pv from "../../../assets/crosiaimg/pv.png";
 import thankyou from "../../../assets/crosiaimg/thankyou.png";
 import Header from "../../../component/Header/white_header/header.jsx";
 import tgbg from "../../../assets/crosiaimg/tgbg.png";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
 import Exploring, { data } from "../../../component/exploring/exploring.jsx";
-
 const crosia = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash) {
-      const element = document.querySelector(location.hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
-
   const crosiaImages = data.filter((img) => img.id !== 2);
 
   return (

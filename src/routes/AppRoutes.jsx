@@ -9,13 +9,12 @@ import CaseStudies from "../pages/cases/cases";
 import Crosia from "../pages/branding/crosia/crosia";
 import GMP from "../pages/branding/gmp/gmp";
 import VacationV from "../pages/branding/vacationv/vacationv";
-import scrolltotop from "../component/ScrollToTop/scrolltotop";
+import Scrolltotop from "../component/scrolltotop";
 
 const AppRoutes = () => {
   return (
-    <>
-      <scrolltotop />
-
+    <div>
+      <Scrolltotop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -27,7 +26,7 @@ const AppRoutes = () => {
         <Route path="branding/vacationv" element={<VacationV />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 };
 

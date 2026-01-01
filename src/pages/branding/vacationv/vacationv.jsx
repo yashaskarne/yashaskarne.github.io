@@ -8,22 +8,9 @@ import vd1_img from "../../../assets/vacationv/vd1.png";
 import vd3_img from "../../../assets/vacationv/vd3.png";
 import vd2_img from "../../../assets/vacationv/vd2.png";
 import vd4_img from "../../../assets/vacationv/vd4.png";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
 import Exploring, { data } from "../../../component/exploring/exploring.jsx";
 
 const Vacationv = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.hash) {
-      const element = document.querySelector(location.hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
-
   const vacationvImages = data.filter((img) => img.id !== 1);
 
   return (

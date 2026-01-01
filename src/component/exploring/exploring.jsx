@@ -1,13 +1,10 @@
-import { useState } from "react";
+import { useEffect, useRef } from "react";
 import "./exploring.css";
 import { Link } from "react-router-dom";
 
 import img1 from "../../assets/gmp2.png";
 import img2 from "../../assets/crosia2.png";
 import img3 from "../../assets/vacation2.png";
-
-import righta from "../../assets/rarrow.png";
-import lefta from "../../assets/larrow.png";
 
 export const data = [
   { id: 1, image: img1, link: "/branding/gmp#gmp" },
@@ -16,43 +13,62 @@ export const data = [
 ];
 
 const Exploring = ({ images }) => {
-  const [index, setIndex] = useState(0);
-  const visible = 2;
+  const containerRef = useRef(null);
+  const intervalRef = useRef(null);
 
-  const prev = () => index > 0 && setIndex(index - 1);
-  const next = () => index < data.length - visible && setIndex(index + 1);
+  const startAutoScroll = () => {
+    if (!containerRef.current || images.length <= 2) return;
+
+    stopAutoScroll();
+
+    intervalRef.current = setInterval(() => {
+      const container = containerRef.current;
+      const slide = container.children[0];
+      if (!slide) return;
+
+      const gap = 40;
+      const slideWidth = slide.offsetWidth + gap;
+
+      // if reached end → reset smoothly
+      if (
+        container.scrollLeft + container.clientWidth >=
+        container.scrollWidth - slideWidth
+      ) {
+        container.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        container.scrollBy({ left: slideWidth, behavior: "smooth" });
+      }
+    }, 500);
+  };
+
+  const stopAutoScroll = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  };
+
+  useEffect(() => {
+    startAutoScroll();
+    return stopAutoScroll;
+  }, [images]);
 
   return (
-    <div className="slider">
+    <div
+      className="slider"
+      onMouseEnter={stopAutoScroll}
+      onMouseLeave={startAutoScroll}
+    >
       <h1 className="ce">Continue Exploring</h1>
-      <div className="slider-window">
-        <div
-          className="slider-track"
-          style={{
-            transform: `translateX(-${index * 50}%)`,
-          }}
-        >
-          {images.map((item, i) => (
-            <a key={i} className="slide">
-              <Link to={item.link}>
-                <img src={item.image} alt="" />
-              </Link>
-            </a>
-          ))}
-        </div>
-      </div>
 
-      <div className="controls">
-        {index > 0 && (
-          <div onClick={prev}>
-            <img src={lefta} alt="" />
+      <div className="scroll-slider" ref={containerRef}>
+        {[...images, ...images].map((item, i) => (
+          <div key={i} className="slide">
+            <Link to={item.link}>
+              <img src={item.image} alt="" />
+            </Link>
           </div>
-        )}
-        {index < data.length - visible && (
-          <div onClick={next}>
-            <img src={righta} alt="" />
-          </div>
-        )}
+        ))}
       </div>
     </div>
   );
