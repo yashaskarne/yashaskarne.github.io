@@ -7,10 +7,12 @@
 
 .hero-head {
     line-height: auto;
-    letter-spacing: -6%;
+
     align-items: self-start;
-    font-size: 40px;
+    font-size: 43px;
     margin: 65px 0px;
+    width: 1382px;
+    font-weight: bold;
 }
 
 
@@ -59,7 +61,7 @@
 
 
 .hero-right p {
-    font-size: 24px;
+    font-size: 25px;
     width: 100%;
 
 

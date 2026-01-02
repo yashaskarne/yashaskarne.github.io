@@ -1,5 +1,5 @@
 @font-face {
-  font-family: rosehot;
+  font-family: Helvetica;
   src: url('../public/fonts/helvetica/Helvetica.ttf');
   font-weight: normal;
 }
@@ -12,7 +12,6 @@ body {
   box-sizing: border-box;
   background-color: #000000;
   color: rgb(255, 255, 255);
-  font-family: 'helvetica', sans-serif;
   overflow-x: hidden;
 }
 
@@ -22,12 +21,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "helvetica";
-  font-weight: bold;
+  font-family: "Helvetica";
+
 }
 
 p {
-  font-family: "helvetica";
+  font-family: "Helvetica";
   font-weight: 300;
 
 }

@@ -25,7 +25,7 @@ const hero = () => {
       <div className="hero">
         <div className="hero-head">
           <h2>
-            Hi I’m Yashas - Brand & UX Designer --- I create identities and
+            Hi I’m Yashas - Brand & UX Designer &mdash; I create identities and
             experiences that make brands clear, distinctive, and memorable.
           </h2>
         </div>
@@ -38,8 +38,8 @@ const hero = () => {
 
             <p>
               I’m currently leading design for <span> Vacation Village</span>,
-              <br /> shaping its identity, communication, and full <br />
-              brand experience across digital and print.
+              shaping its identity, communication, and full brand experience
+              across digital and print.
             </p>
           </div>
         </div>
