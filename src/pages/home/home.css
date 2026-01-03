@@ -14,6 +14,29 @@
     font-family: "Helvetica";
 }
 
+.reveal-text {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.reveal-text span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: revealWord 0.6s ease forwards;
+    will-change: transform, opacity;
+}
+
+@keyframes revealWord {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 
 .second-hero {
     display: flex;

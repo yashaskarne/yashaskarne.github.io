@@ -1,12 +1,13 @@
 import React from "react";
 import "./uiux.css";
-import uiuxcommingsoon from "../../assets/uiuxcommingsoon.png";
+import applevid from "../../assets/applevid.mov";
 import Header from "../../component/Header/black_header/header.jsx";
 import back from "../../assets/wback.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 import Exploring, { data } from "../../component/exploring/exploring.jsx";
+import { div } from "framer-motion/client";
 
 const uiux = () => {
   const navigate = useNavigate();
@@ -14,15 +15,24 @@ const uiux = () => {
   const uiuxImages = data.filter((img) => img.id);
 
   return (
-    <div className="uiux" id="uiux">
-      <Header />
-      <div className="back-branding">
-        <img src={back} alt="back" onClick={() => navigate(-1)} />
+    <div>
+      <div className="uiux" id="uiux">
+        <Header />
+        <div className="back-button-uiux">
+          <img src={back} alt="back" onClick={() => navigate("/")} />
 
-        <h1>UI UX</h1>
+          <h1>UI UX</h1>
+        </div>
+        <video
+          src={applevid}
+          className="uiux-img scroll-section"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+        <h1 className="commingsoon">UI UX Coming Soon...</h1>
       </div>
-      <img src={uiuxcommingsoon} alt="" className="uiux-img scroll-section" />
-      <h1>UI UX Coming Soon</h1>
       <Exploring images={uiuxImages} />
     </div>
   );

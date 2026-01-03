@@ -3,6 +3,8 @@ import "./footer.css";
 import downarrow from "../../assets/downarroe.png";
 import btnicon from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+const emailAddress = "yashk8326@gmail.com";
+const subject = "Inquiry from website";
 
 const footer = () => {
   return (
@@ -26,13 +28,36 @@ const footer = () => {
         <div className="f-data">
           <div className="f-left">
             <p>Bangalore, India</p>
-            <p>yashk8326@gmail.com</p>
+            <p>
+              <a
+                href={`mailto:${emailAddress}?subject=${encodeURIComponent(
+                  subject
+                )}`}
+                className="f-link"
+              >
+                yashk8326@gmail.com
+              </a>
+            </p>
           </div>
           <div className="f-center">
-            <p>LinkedIn</p>
-            <p>Instagram</p>
-            <p>Behance </p>
-            <p>X</p>
+            <a
+              href="https://www.linkedin.com/in/yashas-k-248b68293/?trk=public-profile-join-page"
+              className="f-link"
+            >
+              <p>LinkedIn</p>
+            </a>
+            <a
+              href="https://www.instagram.com/yashsprivatelife/"
+              className="f-link"
+            >
+              <p>Instagram</p>
+            </a>
+            <a href="https://www.behance.net/blacksky00" className="f-link">
+              <p>Behance</p>
+            </a>
+            <a href="https://x.com/YashKarne_" className="f-link">
+              <p>X</p>
+            </a>
           </div>
           <div className="f-right">
             <Link to={"/branding"} className="f-link">

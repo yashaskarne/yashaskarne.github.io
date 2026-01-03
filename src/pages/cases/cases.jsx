@@ -1,27 +1,36 @@
 import React from "react";
 import "./cases.css";
-import uiuxcommingsoon from "../../assets/uiuxcommingsoon.png";
+import applevid from "../../assets/applevid.mov";
 import Header from "../../component/Header/black_header/header.jsx";
 import back from "../../assets/wback.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+
 import Exploring, { data } from "../../component/exploring/exploring.jsx";
 
 const cases = () => {
   const navigate = useNavigate();
-  const casestudiesImages = data.filter((img) => img.id);
+
+  const uiuxImages = data.filter((img) => img.id);
 
   return (
-    <div className="uiux" id="casestudies">
+    <div className="uiux" id="uiux">
       <Header />
-      <div className="back-branding">
-        <img src={back} alt="back" onClick={() => navigate(-1)} />
+      <div className="back-button-uiux">
+        <img src={back} alt="back" onClick={() => navigate("/")} />
 
         <h1>Case Studies</h1>
       </div>
-      <img src={uiuxcommingsoon} alt="" className="uiux-img scroll-section" />
-      <h1>Caes Studies Coming Soon</h1>
-      <Exploring images={casestudiesImages} />
+      <video
+        src={applevid}
+        className="uiux-img scroll-section"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+      <h1 className="commingsoon">Case Studies Coming Soon...</h1>
+      <Exploring images={uiuxImages} />
     </div>
   );
 };

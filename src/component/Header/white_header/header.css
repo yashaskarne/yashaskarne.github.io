@@ -46,8 +46,36 @@
 }
 
 .nav-menu-red ul li a {
+    position: relative;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    font-size: 24px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 22px;
+    padding: 5px 20px;
+    font-family: "Helvetica";
+    display: inline-block;
+
+    transition: transform 0.3s ease;
+}
+
+/* underline */
+.nav-menu-red ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.35s ease;
+    transform: translateX(-50%);
+}
+
+/* hover effects */
+.nav-menu-red ul li a:hover {
+    transform: scale(1.08);
+}
+
+.nav-menu-red ul li a:hover::after {
+    width: 70%;
 }

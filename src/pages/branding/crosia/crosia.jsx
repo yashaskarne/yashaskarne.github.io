@@ -28,8 +28,10 @@ const crosia = () => {
 
   return (
     <div className="crosia" id="crosia">
-      <Header />
-      <div className="cover scroll-section">
+      <div className="header-c">
+        <Header />
+      </div>
+      <div className="cover">
         <img src={hero_cover} alt="" />
       </div>
 
@@ -78,7 +80,7 @@ const crosia = () => {
             </div>
           </div>
           <div className="hooks">
-            <h2 className="scroll-section">hooks</h2>
+            <h2 className="scroll-section">hook</h2>
             <div className="hookimages">
               <img src={hookimg} alt="" className="hookimg scroll-section" />
               <img src={crg1} alt="" className="scroll-section" />

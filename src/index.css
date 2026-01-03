@@ -12,26 +12,11 @@ body {
   background-color: #000000;
   color: rgb(255, 255, 255);
   overflow-x: hidden;
-}
-
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
   font-family: "Helvetica";
-  font-weight: bold;
-
 }
 
-p {
-  font-family: "Helvetica";
-  font-weight: 300;
 
-}
+
 
 .scroll-section {
   opacity: 0;

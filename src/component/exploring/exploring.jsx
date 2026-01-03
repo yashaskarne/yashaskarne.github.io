@@ -70,7 +70,6 @@ const Exploring = ({ images }) => {
   return (
     <section className="slider scroll-section">
       <h1 className="ce">Continue Exploring</h1>
-
       <div
         ref={containerRef}
         className={`scroll-slider ${images.length <= 2 ? "centered" : ""}`}

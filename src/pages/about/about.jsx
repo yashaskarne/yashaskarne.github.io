@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./about.css";
 import Header from "../../component/Header/black_header/header";
 import yash_abt from "../../assets/yashas.png";
@@ -6,11 +6,30 @@ import work_abt from "../../assets/work-abt.png";
 import resume from "../../assets/resume.pdf";
 
 const about = () => {
+  const textRef = useRef(null);
+  useEffect(() => {
+    if (!textRef.current) return;
+
+    // prevent double execution
+    if (textRef.current.dataset.animated === "true") return;
+
+    const text = textRef.current.innerText;
+    const words = text.split(" ");
+
+    textRef.current.innerHTML = words
+      .map(
+        (word, i) =>
+          `<span style="animation-delay:${i * 0.2}s">${word}&nbsp;</span>`
+      )
+      .join("");
+
+    textRef.current.dataset.animated = "true";
+  }, []);
   return (
     <div>
       <Header />
       <div className="about">
-        <h1 className="abt-heading scroll-section">
+        <h1 className="abt-heading reveal-text" ref={textRef}>
           I’m a designer focused on building clear, intentional brand and
           product experiences.
         </h1>

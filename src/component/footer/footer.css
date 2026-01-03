@@ -5,6 +5,8 @@
     align-items: center;
     width: 100%;
     gap: 70px;
+    position: relative;
+    z-index: 1;
 
 }
 
@@ -55,6 +57,8 @@
     border-radius: 20px;
     padding: 65px 90px;
     max-width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 .f-heading {
@@ -68,7 +72,7 @@
 .f-heading h1 {
     font-size: 25px;
     font-weight: bold;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
 }
 
 .f-data {
@@ -78,6 +82,7 @@
     font-size: 20px;
     font-weight: 200;
     letter-spacing: -0.9px;
+
 }
 
 .f-left {
@@ -96,5 +101,12 @@
 .f-link {
     text-decoration: none;
     color: white;
+    pointer-events: auto;
+    cursor: pointer;
+
+}
+
+.f-link:hover {
+    color: rgb(147, 147, 147);
 
 }
