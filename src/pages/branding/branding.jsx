@@ -13,10 +13,10 @@ const branding = () => {
   return (
     <div id="branding">
       <Header />
-      <div className="back-button-uiux">
+      <div className="back-button-branding">
         <img src={back} alt="back" onClick={() => navigate("/")} />
 
-        <h1>UI UX</h1>
+        <h1>Branding</h1>
       </div>
       <div className="branding">
         {brandingproject.map((item, index) => (

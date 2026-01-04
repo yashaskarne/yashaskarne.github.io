@@ -1,49 +1,37 @@
-.back-button-uiux {
+.back-button-cases {
     display: flex;
     padding-top: 60px;
-    margin-bottom: -20px;
     align-items: center;
-    gap: 20px;
-    margin-left: 45px;
+    gap: 57px;
+    margin-left: 68px;
 }
 
-.back-button-uiux img {
-    width: 50px;
+.back-button-cases img {
+    width: 60px;
     vertical-align: middle;
+    cursor: pointer;
 }
 
-.back-button-uiux h1 {
-    font-size: 50px;
+.back-button-cases h1 {
+    font-size: 80px;
 }
 
-.uiux {
-    width: 100%;
+.cases {
     text-align: center;
-
+    margin-bottom: 500px;
 }
 
-.uiux-img {
-    width: 98%;
+.cases-img {
+    width: 80%;
+    margin-top: 12px;
 }
 
-.commingsoon {
-    text-align: start;
-    font-size: 60px;
+.commingsoon-cases {
+    text-align: center;
+    font-size: 54px;
     font-weight: bold;
-    margin-left: 45px;
     font-family: "Helvetica";
     letter-spacing: -1px;
-    margin-top: 10px;
-}
+    margin-top: 40px;
 
-
-.scroll-section {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: all 0.8s ease-out;
-}
-
-.scroll-section.show {
-    opacity: 1;
-    transform: translateY(0);
 }

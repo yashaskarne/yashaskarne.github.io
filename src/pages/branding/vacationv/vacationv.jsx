@@ -17,7 +17,7 @@ const Vacationv = () => {
     <div>
       <Header />
       <div className="vacationv" id="vacationv">
-        <div className="vv-hero scroll-section">
+        <div className="vv-hero ">
           <img src={hero_img} alt="" />
           <p>Real Estate Brand Experience & Marketing Design</p>
         </div>

@@ -31,7 +31,7 @@ const uiux = () => {
           loop
           playsInline
         />
-        <h1 className="commingsoon">UI UX Coming Soon...</h1>
+        <h1 className="commingsoon">IN DEVELOPMENT</h1>
       </div>
       <Exploring images={uiuxImages} />
     </div>

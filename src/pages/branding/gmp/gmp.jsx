@@ -24,7 +24,7 @@ const gmp = () => {
   return (
     <div className="gmp" id="gmp">
       <Header />
-      <div className="hero-gmp scroll-section">
+      <div className="hero-gmp ">
         <img src={gmpicon} alt="" />
         <h1>Glorious Maidens Pirate</h1>
       </div>

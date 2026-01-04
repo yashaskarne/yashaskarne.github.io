@@ -1,6 +1,5 @@
 .about {
     margin: 0px 46px;
-    padding: 0;
     display: flex;
     flex-direction: column;
 }
@@ -38,14 +37,15 @@
     margin-top: 132px;
     display: flex;
     flex-direction: row;
-    padding: 0;
     justify-content: space-between;
+
 }
 
 .left-abt {
     display: flex;
     flex-direction: column;
     width: 40%;
+    margin-left: 40px;
 }
 
 .hero-abt p {
@@ -60,20 +60,22 @@
     display: flex;
     flex-direction: column;
     width: 40%;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
+    margin-top: 40px;
+
 }
 
 .right-abt img {
     width: 515px;
     max-width: 80%;
     transition: transform 0.1s ease;
-
+    transform: rotate(5deg);
 }
 
 .right-abt img:hover {
-    transform: rotate(5deg);
+    transform: rotate(0deg);
 }
 
 .right-abt button {
@@ -85,10 +87,11 @@
     cursor: pointer;
     max-width: 252px;
     transition: transform 0.1s ease;
+    border: none;
 }
 
 .right-abt button:hover {
-    transform: rotate(-3deg);
+    transform: rotate(5deg);
     margin-left: 15px;
 }
 
@@ -97,6 +100,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-left: 40px;
 }
 
 .abt-sec2 img {
@@ -117,16 +121,4 @@
     font-size: 33px;
     font-weight: 400;
     max-width: 990px;
-}
-
-
-.scroll-section {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: all 0.8s ease-out;
-}
-
-.scroll-section.show {
-    opacity: 1;
-    transform: translateY(0);
 }

@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import "./home.css";
+import "../../index.css";
 import heroleft from "../../assets/heroleft.png";
 import heroright from "../../assets/yashas.png";
 import projectforhome from "../../assets/projectforhome.js";

@@ -7,22 +7,22 @@
 
 }
 
-.back-button-uiux {
+.back-button-branding {
     display: flex;
     padding-top: 60px;
     margin-bottom: -20px;
     align-items: center;
     gap: 20px;
-    margin-left: 45px;
+    margin-left: 68px;
 }
 
-.back-button-uiux img {
+.back-button-branding img {
     width: 50px;
     vertical-align: middle;
     cursor: pointer;
 }
 
-.back-button-uiux h1 {
+.back-button-branding h1 {
     font-size: 50px;
 }
 
@@ -30,8 +30,8 @@
     text-decoration: none;
     max-width: 100%;
 
-    margin-left: 130px;
-    margin-right: 130px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .brand-data {
@@ -52,8 +52,8 @@
 
 .p_image {
     margin-top: 70px;
-    width: 100%;
-    height: 483px;
+    width: 98%;
+    height: 500px;
     border-radius: 25px;
     object-fit: cover;
     transition: transform 0.2s ease;
@@ -84,6 +84,7 @@
     justify-content: end;
     align-self: flex-end;
     padding-bottom: 15px;
+    padding-right: 26px;
 
 }
 
@@ -92,16 +93,4 @@
     transition: transform 0.2s ease;
     transform: rotate(-90deg);
 
-}
-
-
-.scroll-section {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: all 0.8s ease-out;
-}
-
-.scroll-section.show {
-    opacity: 1;
-    transform: translateY(0);
 }

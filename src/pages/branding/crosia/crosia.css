@@ -12,7 +12,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
     color: black;
 
 
@@ -21,29 +20,35 @@
 }
 
 .cover {
-    width: 100%;
-    flex-direction: column;
 
+    flex-direction: column;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 2025px;
     background-color: #960e10;
 
 
 }
 
 .cover img {
-    width: 1440px;
+    width: 614px;
+    margin-top: 325px;
     max-width: 100%;
-
-    margin-top: -150px;
     z-index: 0;
 
 
 
 }
 
-
+.brand-text {
+    margin-top: -1170px;
+    align-self: flex-start;
+    margin-left: 63px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
 
 
 .white-sec {
@@ -54,7 +59,7 @@
 }
 
 .sec1 {
-    padding: 120px 150px;
+    padding: 0px 150px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -62,9 +67,9 @@
 }
 
 .sec1img1 {
-    width: 1170px;
+    width: 1094px;
 
-    margin-top: -1100px;
+
 }
 
 .sec1p1 {
@@ -81,7 +86,7 @@
     width: 100%;
     justify-content: center;
     gap: 186px;
-    margin-top: 213px;
+    margin-top: 190px;
     margin-left: 316px;
     margin-right: 316px;
 
@@ -98,7 +103,7 @@
 }
 
 .sqimg {
-    margin-top: 284px;
+    margin-top: 274px;
 }
 
 .sqimg img {
@@ -115,8 +120,8 @@
 .camping-red {
     font-size: 40px;
     text-transform: uppercase;
-    margin-top: 142px;
-    margin-bottom: 133px;
+    margin-top: 192px;
+    margin-bottom: 93px;
 
 }
 
@@ -153,32 +158,40 @@
     flex-direction: column;
     padding-top: 221px;
     z-index: 2;
+    align-items: center;
 }
 
 .typography h1 {
     font-size: 50px;
     text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -2px;
+
 }
 
 .typography h2 {
     font-size: 70px;
     font-family: 'rosehot';
     font-weight: 300;
-    padding-top: 55px;
+    padding-top: 10px;
+    letter-spacing: -3px;
 
 
 }
 
 .typography p {
     font-size: 48px;
-    margin-top: -29px;
-    padding-bottom: 220px;
+    margin-top: -39px;
     font-family: 'rosehot';
+    width: 1152px;
+    letter-spacing: -3px;
 }
 
 .logomark {
     display: flex;
     flex-direction: column;
+    margin-top: 151px;
+
 
 }
 
@@ -186,45 +199,52 @@
     font-size: 50px;
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: -2px;
+
 }
 
 .logomark-images {
     display: flex;
-    justify-content: space-between;
-    margin-top: 133px;
+    justify-content: center;
     gap: 80px;
+    margin-top: 93px;
     margin-left: 206px;
     margin-right: 206px;
+}
+
+.logomark-images img {
+    width: 197px;
 }
 
 
 .hooks {
     display: flex;
     flex-direction: column;
-
+    margin-top: 163px;
     align-items: center;
 }
 
 .hooks h2 {
     font-size: 50px;
     text-transform: uppercase;
-    padding-bottom: 82px;
-    padding-top: 193px;
+    font-weight: bold;
+    letter-spacing: -2px;
 }
 
 .hookimg {
-    width: 575px;
-    padding-top: 82px;
-    padding-bottom: 136px;
+    width: 600px;
+    margin-top: 62px;
+    margin-bottom: 66px;
 }
 
 .hookimages {
-    margin: 0px 218px;
+    margin-left: 218px;
+    margin-right: 218px;
     max-width: 1040px;
 
 }
 
-.hookimages img {
+.hookposter {
     padding-top: 97px;
 }
 
@@ -243,21 +263,21 @@
 .logo-var h2 {
     font-size: 50px;
     text-transform: uppercase;
-    padding-bottom: 133px;
-    padding-top: 583px;
+    padding-top: 553px;
     font-weight: bold;
-    letter-spacing: -3px;
+    letter-spacing: -2px;
 }
 
 .lv-images {
     display: flex;
+    margin-top: 103px;
     flex-direction: column;
-    gap: 114px;
+    gap: 135px;
 
 }
 
 .lv-images img {
-    width: 449px;
+    width: 488px;
     align-self: center;
 
 }
@@ -265,20 +285,22 @@
 .product-vision {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
     padding-top: 145px;
     text-align: center;
 }
 
 .product-vision img {
-    margin: 0px 396px;
+
+    width: 649px;
+
 }
 
 .product-vision h2 {
     font-size: 49px;
     color: white;
-    margin-top: -374px;
-    margin-bottom: 284px;
+    margin-top: -434px;
+    margin-bottom: 440px;
     font-family: 'rosehot';
     text-transform: uppercase;
     font-weight: 100;
@@ -294,7 +316,7 @@
     position: relative;
     font-weight: 300;
     z-index: 2;
-    margin-top: 146px;
+    margin-top: 74px;
 
 }
 
@@ -321,7 +343,7 @@
 .thankyou-c h1 {
     font-size: 70px;
     color: white;
-    margin-top: 880px;
+    margin-top: 980px;
     font-family: 'rosehot';
     font-weight: 300;
     text-transform: uppercase;
@@ -329,17 +351,7 @@
     z-index: 2;
 }
 
-
-
-.scroll-section {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: all 0.3s ease-out;
+.exploring-c {
+    margin-top: -120px;
+    margin-bottom: -110px;
 }
-
-.scroll-section.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-@media(max-width: 786px) {}

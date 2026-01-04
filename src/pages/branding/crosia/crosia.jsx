@@ -37,7 +37,8 @@ const crosia = () => {
 
       <div className="white-sec">
         <div className="sec1">
-          <img src={white_sec} alt="" className="sec1img1 scroll-section" />
+          <h1 className="brand-text">Brand Designer</h1>
+          <img src={white_sec} alt="" className="sec1img1" />
           <p className="sec1p1 scroll-section">
             Crosia is positioned as a sensual, editorial luxury brand built
             around elegance, intimacy, and bold typography. The identity focuses
@@ -83,9 +84,9 @@ const crosia = () => {
             <h2 className="scroll-section">hook</h2>
             <div className="hookimages">
               <img src={hookimg} alt="" className="hookimg scroll-section" />
-              <img src={crg1} alt="" className="scroll-section" />
-              <img src={crg2} alt="" className="scroll-section" />
-              <img src={crg3} alt="" className="scroll-section" />
+              <img src={crg1} alt="" className=" hookposter scroll-section" />
+              <img src={crg2} alt="" className=" hookposter scroll-section" />
+              <img src={crg3} alt="" className=" hookposter scroll-section" />
             </div>
           </div>
         </div>
@@ -127,7 +128,9 @@ const crosia = () => {
           </div>
         </div>
       </div>
-      <Exploring images={crosiaImages} />
+      <div className="exploring-c">
+        <Exploring images={crosiaImages} />
+      </div>
     </div>
   );
 };

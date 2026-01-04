@@ -7,30 +7,33 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 import Exploring, { data } from "../../component/exploring/exploring.jsx";
+import { div } from "framer-motion/client";
 
 const cases = () => {
   const navigate = useNavigate();
 
-  const uiuxImages = data.filter((img) => img.id);
+  const casesImages = data.filter((img) => img.id);
 
   return (
-    <div className="uiux" id="uiux">
-      <Header />
-      <div className="back-button-uiux">
-        <img src={back} alt="back" onClick={() => navigate("/")} />
+    <div>
+      <div className="cases" id="cases">
+        <Header />
+        <div className="back-button-cases">
+          <img src={back} alt="back" onClick={() => navigate("/")} />
 
-        <h1>Case Studies</h1>
+          <h1>Case Studies</h1>
+        </div>
+        <video
+          src={applevid}
+          className="cases-img scroll-section"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+        <h1 className="commingsoon-cases">IN DEVELOPMENT</h1>
       </div>
-      <video
-        src={applevid}
-        className="uiux-img scroll-section"
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
-      <h1 className="commingsoon">Case Studies Coming Soon...</h1>
-      <Exploring images={uiuxImages} />
+      <Exploring images={casesImages} />
     </div>
   );
 };

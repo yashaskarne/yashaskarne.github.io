@@ -178,15 +178,3 @@
     object-fit: cover;
     transition: transform 0.2s ease;
 }
-
-
-.scroll-section {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: all 0.8s ease-out;
-}
-
-.scroll-section.show {
-    opacity: 1;
-    transform: translateY(0);
-}
