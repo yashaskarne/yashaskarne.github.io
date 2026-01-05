@@ -44,7 +44,7 @@ import Publication_img3 from "../../assets/Studio/Publication-img/3.png";
 
 const studio = () => {
   return (
-    <div>
+    <div className="studio-bg">
       <Header />
       <div className="studio-page">
         <h1 className="Still-title">Still Photos</h1>

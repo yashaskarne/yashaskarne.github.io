@@ -17,9 +17,9 @@ const footer = () => {
           <hr />
 
           <img src={btnicon} alt="" />
-          <a href="/studio">
+          <Link to="/studio">
             <h1>THE STUDIO</h1>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="footer">
