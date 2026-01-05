@@ -4,6 +4,7 @@
 }
 
 
+/* Normalise wide margins/paddings for other pages (tablet and below) */
 
 body {
   margin: 0;

@@ -14,65 +14,64 @@ export const data = [
 
 const Exploring = ({ images }) => {
   const containerRef = useRef(null);
-  const rafRef = useRef(null);
   const isPausedRef = useRef(false);
-  const hasFinishedRef = useRef(false);
   const START_DELAY = 800;
+  const sectionRef = useRef(null);
+  const intervalRef = useRef(null);
+  const currentIndexRef = useRef(0);
 
-  const SPEED = 1.5;
+  const pause = () => clearInterval(intervalRef.current);
+  const resume = () => {
+    intervalRef.current = setInterval(slideOnce, 3000);
+  };
 
-  const animate = () => {
-    if (!containerRef.current || hasFinishedRef.current) return;
-
+  const slideOnce = () => {
     const container = containerRef.current;
+    if (!container) return;
 
-    if (!isPausedRef.current) {
-      container.scrollLeft -= SPEED;
+    const slides = container.children;
+    if (!slides.length) return;
 
-      // Stop autoplay at end (ONE TIME ONLY)
-      if (container.scrollLeft <= SPEED) {
-        container.scrollLeft = 0;
-        hasFinishedRef.current = true;
-        cancelAnimationFrame(rafRef.current);
-        return;
-      }
+    const slideWidth = slides[0].offsetWidth + 68; // gap
+    const maxIndex = slides.length - 1;
+
+    // move backward (last → first)
+    currentIndexRef.current--;
+
+    if (currentIndexRef.current < 0) {
+      currentIndexRef.current = maxIndex;
     }
 
-    rafRef.current = requestAnimationFrame(animate);
+    container.scrollTo({
+      left: slideWidth * currentIndexRef.current,
+      behavior: "smooth",
+    });
   };
 
   useEffect(() => {
     if (!containerRef.current) return;
 
-    // Always start perfectly at first slide
-    containerRef.current.scrollLeft =
-      containerRef.current.scrollWidth - containerRef.current.clientWidth;
-    hasFinishedRef.current = false;
+    const container = containerRef.current;
 
-    if (images.length > 2) {
-      const timeout = setTimeout(() => {
-        if (
-          containerRef.current.scrollWidth > containerRef.current.clientWidth
-        ) {
-          rafRef.current = requestAnimationFrame(animate);
-        }
-      }, START_DELAY);
+    // start from LAST slide
+    currentIndexRef.current = images.length - 1;
+    slideOnce();
 
-      return () => {
-        clearTimeout(timeout);
-        cancelAnimationFrame(rafRef.current);
-      };
-    }
+    intervalRef.current = setInterval(slideOnce, 3000); // 3 sec
 
-    return () => cancelAnimationFrame(rafRef.current);
+    return () => clearInterval(intervalRef.current);
   }, [images]);
 
   return (
-    <section className="slider scroll-section">
+    <section ref={sectionRef} className="slider scroll-section">
       <h1 className="ce">Continue Exploring</h1>
       <div
         ref={containerRef}
-        className={`scroll-slider ${images.length <= 2 ? "centered" : ""}`}
+        className="scroll-slider"
+        onMouseEnter={pause}
+        onMouseLeave={resume}
+        onTouchStart={pause}
+        onTouchEnd={resume}
       >
         {images.map((item, index) => (
           <div key={index} className="slide">
