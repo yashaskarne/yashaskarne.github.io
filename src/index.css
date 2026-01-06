@@ -13,7 +13,26 @@ body {
   background-color: #000000;
   color: rgb(255, 255, 255);
   overflow-x: hidden;
+
   font-family: "Helvetica";
+}
+
+img,
+video {
+
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+::selection {
+  color: rgb(133, 130, 130);
 }
 
 
@@ -92,6 +111,7 @@ body {
   video {
     max-width: 100%;
     height: auto;
+    user-select: none;
   }
 
   /* Default page padding to avoid horizontal scroll */

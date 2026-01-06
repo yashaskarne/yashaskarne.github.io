@@ -24,31 +24,12 @@ const hero = () => {
     }
   }, [location]);
 
-  useEffect(() => {
-    if (!textRef.current) return;
-
-    // prevent double execution
-    if (textRef.current.dataset.animated === "true") return;
-
-    const text = textRef.current.innerText;
-    const words = text.split(" ");
-
-    textRef.current.innerHTML = words
-      .map(
-        (word, i) =>
-          `<span style="animation-delay:${i * 0.2}s">${word}&nbsp;</span>`
-      )
-      .join("");
-
-    textRef.current.dataset.animated = "true";
-  }, []);
-
   return (
     <div>
       <Header />
       <div className="hero ">
         <div className="hero-head">
-          <h2 ref={textRef} className="reveal-text">
+          <h2 className="hero-title">
             Hi I’m Yashas - Brand & UX Designer &mdash; I create identities and
             experiences that make brands clear, distinctive, and memorable.
           </h2>
