@@ -19,11 +19,8 @@ body {
 
 img,
 video {
-
-  user-select: none;
-  -webkit-user-drag: none;
-  -webkit-touch-callout: none;
-  pointer-events: none;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -111,7 +108,7 @@ a {
   video {
     max-width: 100%;
     height: auto;
-    user-select: none;
+
   }
 
   /* Default page padding to avoid horizontal scroll */
