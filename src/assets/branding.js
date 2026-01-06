@@ -11,13 +11,13 @@ const branding = [
   },
   {
     p_name: "Crosia",
-    p_desc: "Identity system, logo, photography, and brand world.",
+    p_desc: "Brand identity, strategy, and visual system",
     p_image: crosia_png,
     path: "/branding/crosia",
   },
   {
     p_name: "Vacation Village",
-    p_desc: "Identity system, logo, photography, and brand world.",
+    p_desc: "Real Estate Brand Experience & Marketing Design",
     p_image: vacation_png,
     path: "/branding/vacationv",
   },

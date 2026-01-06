@@ -245,8 +245,12 @@
 
     /* HERO HEAD */
     .hero-head {
-        font-size: 32px;
-        margin: 40px 20px 0 20px;
+
+        margin: 40px 10px 0 10px;
+    }
+
+    .hero-head h2 {
+        font-size: 26px;
     }
 
     /* STACK HERO SECTIONS */
@@ -281,11 +285,18 @@
         flex-direction: column;
         width: 100%;
         gap: 25px;
-        padding: 0 20px;
+        padding: 20px 20px;
+        background-color: rgb(17, 17, 17);
+        border-radius: 20px;
+        border: 2px solid rgb(47, 47, 47);
+
+
     }
 
     .left-home-project {
         width: 100%;
+        margin-top: 10px;
+
     }
 
     .left-home-project h1 {
@@ -294,10 +305,17 @@
 
     .right-home-project {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .right-home-project img {
         width: 100%;
+    }
+
+    .left-home-project hr {
+        margin-top: -10px;
+        margin-bottom: -7px;
+        width: 100px;
     }
 }
 

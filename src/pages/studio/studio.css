@@ -159,7 +159,13 @@
         margin-top: 100px;
     }
 
-    .Posters,
+    .Posters {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
     .Publication {
         flex-direction: column;
         max-width: 100%;
