@@ -7,13 +7,13 @@
 }
 
 .back-button-uiux img {
-    width: 60px;
+    width: 40px;
     vertical-align: middle;
     cursor: pointer;
 }
 
 .back-button-uiux h1 {
-    font-size: 80px;
+    font-size: 32px;
 }
 
 .uiux {

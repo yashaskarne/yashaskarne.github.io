@@ -7,13 +7,13 @@
 }
 
 .back-button-cases img {
-    width: 60px;
+    width: 50px;
     vertical-align: middle;
     cursor: pointer;
 }
 
 .back-button-cases h1 {
-    font-size: 80px;
+    font-size: 50px;
 }
 
 .cases {
@@ -46,11 +46,11 @@
     }
 
     .back-button-cases img {
-        width: 50px;
+        width: 40px;
     }
 
     .back-button-cases h1 {
-        font-size: 56px;
+        font-size: 32px;
     }
 
     /* VIDEO */
