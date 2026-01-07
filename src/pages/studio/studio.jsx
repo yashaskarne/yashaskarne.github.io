@@ -368,40 +368,12 @@ const studio = () => {
         )}
 
         <h1 className="Publication-title">Publication</h1>
-        {isMobile ? (
-          <LightGallery
-            selector="a"
-            onInit={onInit}
-            speed={500}
-            plugins={[lgThumbnail]}
-            controls={true}
-            closable={true}
-            hideBarsDelay={0}
-            mobileSettings={{
-              controls: false,
-              showCloseIcon: true,
-              download: false,
-            }}
-          >
-            <div className="Publication">
-              <a href={Publication_img1} data-src={Publication_img1}>
-                <img src={Publication_img1} alt="" />
-              </a>
-              <a href={Publication_img2} data-src={Publication_img2}>
-                <img src={Publication_img2} alt="" />
-              </a>
-              <a href={Publication_img3} data-src={Publication_img3}>
-                <img src={Publication_img3} alt="" />
-              </a>
-            </div>
-          </LightGallery>
-        ) : (
-          <div className="Publication">
-            <img src={Publication_img1} alt="" />
-            <img src={Publication_img2} alt="" />
-            <img src={Publication_img3} alt="" />
-          </div>
-        )}
+
+        <div className="Publication">
+          <img src={Publication_img1} alt="" />
+          <img src={Publication_img2} alt="" />
+          <img src={Publication_img3} alt="" />
+        </div>
 
         <h1 className="studio-desc">
           Sketching, photography, and posters are not side interests. They train

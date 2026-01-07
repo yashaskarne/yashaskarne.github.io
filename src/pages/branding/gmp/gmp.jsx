@@ -98,9 +98,9 @@ const gmp = () => {
           durability, texture, and honest aging ensuring the products reflected
           the same raw, artisanal values as the identity itself.
         </p>
-        <img src={gmpgold} alt="" className="gmp-gold scroll-section" />
+        <img src={gmpgold} alt="" className="gmp-gold " />
       </div>
-      <div className="thankyou-gmp scroll-section">
+      <div className="thankyou-gmp ">
         <img src={thankyou} alt="" />
         <h1>THANKYOU</h1>
       </div>

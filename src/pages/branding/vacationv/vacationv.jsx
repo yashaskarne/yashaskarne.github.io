@@ -36,9 +36,9 @@ const Vacationv = () => {
           <img src={iii_img} alt="" className="vv2img2 scroll-section" />
           <p className="vv2p3">
             Vacation Village is positioned as more than a residential
-            development. <br /> It is designed as a managed lifestyle
-            destination combining private residences, hospitality spaces,
-            wellness experiences, and long-term asset value.
+            development. It is designed as a managed lifestyle destination
+            combining private residences, hospitality spaces, wellness
+            experiences, and long-term asset value.
           </p>
         </div>
         <div className="vvsec-3 vd scroll-section">

@@ -42,7 +42,7 @@
 }
 
 .vv2p2 {
-    margin-top: 163px;
+    margin-top: 133px;
     font-size: 24px;
     font-family: "Belleza";
     font-weight: 500;
@@ -53,7 +53,7 @@
 }
 
 .vv2img2 {
-    margin-top: 53px;
+    margin-top: 133px;
     width: 100%;
 }
 
@@ -62,7 +62,7 @@
     font-size: 24px;
     font-family: "Belleza";
     font-weight: 500;
-    width: 819px;
+    width: 680px;
     text-align: center;
 }
 
@@ -335,7 +335,7 @@
 
     /* SECTION 2 */
     .vv-sec2 {
-        margin-top: 140px;
+        margin-top: 60px;
     }
 
     .vv2p1,
@@ -347,18 +347,21 @@
     }
 
     .vv2p2 {
-        margin-top: 80px;
+        margin-top: 60px;
     }
 
+
+
     .vv2img2 {
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
     /* VISUAL DIRECTION */
     .vd-title {
         font-size: 28px;
         margin-left: 20px;
-        margin-top: 140px;
+        margin-top: 80px;
+        margin-bottom: -10px;
     }
 
 

@@ -122,7 +122,7 @@ const crosia = () => {
               product-led storytelling.
             </p>
           </div>
-          <div className="thankyou-c scroll-section">
+          <div className="thankyou-c">
             <img src={thankyou} alt="" />
             <h1>Thank You</h1>
           </div>
