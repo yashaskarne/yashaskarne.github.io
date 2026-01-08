@@ -229,6 +229,21 @@
         margin-top: 15px;
     }
 
+    .studio-button:hover {
+        background-color: #000000;
+
+    }
+
+    .studio-button:hover img {
+        width: 35px;
+
+    }
+
+    .studio-button:hover hr {
+        background-color: #ffffff00;
+
+    }
+
     /* FOOTER BOX */
     .footer {
         margin: 20px;
