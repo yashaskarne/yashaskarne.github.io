@@ -132,6 +132,46 @@
     letter-spacing: 2.5px;
 }
 
+@media(max-width: 1024px) {
+    .studio-page {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .Still-title,
+    .Posters-title,
+    .Sketchbook-title,
+    .Publication-title {
+        font-size: 40px;
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+    .Posters img {
+        width: 23%;
+
+    }
+
+    .Publication img {
+
+        width: 33%;
+    }
+
+    .studio-desc {
+        width: 100%;
+        font-size: 32px;
+        margin-left: 0;
+        margin-top: 150px;
+    }
+
+    .studio-exists {
+        font-size: 36px;
+        margin-left: 0;
+        margin-top: 20px;
+
+    }
+}
+
 @media (max-width: 768px) {
     .studio-bg {
         background-image: url("../../assets/studiobg.png");

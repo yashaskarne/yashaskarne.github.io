@@ -377,13 +377,13 @@
 
     .brand-text {
         margin-top: -820px;
-        margin-left: 40px;
+        margin-left: 0px;
         font-size: 26px;
     }
 
     /* SECTION 1 */
     .sec1 {
-        padding: 0 60px;
+        padding: 0 100px;
     }
 
     .sec1img1 {
@@ -455,7 +455,7 @@
 
     /* SECTION 3 */
     .logo-var h2 {
-        padding-top: 420px;
+        padding-top: 520px;
         font-size: 40px;
     }
 
@@ -476,6 +476,14 @@
     .product-vision p {
         width: 85%;
         font-size: 22px;
+    }
+
+    .thankyou-c {
+        margin-top: -350px;
+    }
+
+    .thankyou-c img {
+        margin-top: 200px;
     }
 
     .thankyou-c h1 {
