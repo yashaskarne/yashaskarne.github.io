@@ -16,7 +16,7 @@
 }
 
 .studio-button:hover img {
-    width: 70px;
+    width: 58px;
 
 }
 
@@ -32,11 +32,11 @@
 
 .studio-button {
     display: flex;
-    transition: 1.2s;
+    transition: 0.5s;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1423px;
+    max-width: 1153px;
     cursor: pointer;
     background-color: rgba(65, 64, 64, 0.293);
     border-radius: 15px 15px 20px 20px;
@@ -51,7 +51,7 @@
     background-color: rgba(24, 24, 24, 0);
     border: none;
     margin-top: 0px;
-    transition: 1.2s;
+    transition: 0.5s;
 }
 
 
@@ -64,7 +64,7 @@
 .studio-button img {
     width: 50px;
     margin-top: -28px;
-    transition: 1.2s;
+    transition: 0.5s;
 
 }
 
@@ -218,13 +218,13 @@
     }
 
     .studio-button img {
-        width: 45px;
+        width: 35px;
         margin-top: -25px;
 
     }
 
     .studio-button h1 {
-        font-size: 28px;
+        font-size: 24px;
         letter-spacing: -0.5px;
         margin-top: 15px;
     }
@@ -267,7 +267,7 @@
 @media (max-width: 480px) {
 
     .studio-button h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .footer {
